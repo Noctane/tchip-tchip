@@ -16,7 +16,7 @@ class Tchip extends React.Component {
 							</div>
 						</div>
 						
-						<div className="tchip-date">{details.timestamp}</div>
+						<div className="tchip-date">{details.date}</div>
 					</div>
 					<div className="tchip-content">
 						<p>{details.tchip}</p>
