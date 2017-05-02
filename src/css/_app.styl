@@ -1,0 +1,75 @@
+
+.tchip
+	width: 40em
+	margin: 1em 0
+	padding: 15px
+	background: #fff
+	border: solid 1px #ddd
+	border-radius: 3px
+	
+	.tchip-head
+		display: flex
+		justify-content: space-between
+		
+		.avatar:before, .avatar:after
+			display: table
+			
+		.avatar:after
+			content:" "
+			clear: both
+			
+		.avatar img
+			display: block
+			float: left
+			
+		.avatar .name
+			float: left 
+			margin-left: 10px
+
+			h3
+				margin: 0
+			.username
+				color: #ccc
+				font-style: italic
+				
+	.tchip-date
+		font-size: 0.8em
+		color: #ccc
+		
+	.tchip-action
+		border-top: solid 1px #dedede
+		padding-top: 10px
+		display: flex
+		
+		button
+			text-align: left
+			display: flex
+			border: none
+			width: 80px
+			background: none
+			color: #ccc
+			
+			.icon
+				padding: 0 10px 0 0
+
+.tchip-form
+	margin-top: 40px
+	
+	&:after, &:before
+		display: table
+		
+	&:after
+		content: " "
+		clear: both
+	
+	.tchip-edit
+		display: block
+		width: 100%
+		
+	button
+		margin-top: 10px
+		float: right
+		
+
+		
+	

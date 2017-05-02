@@ -1,0 +1,26 @@
+{
+  "name": "tchip-tchip",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "autoprefixer-stylus": "^0.13.0",
+    "concurrently": "^3.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
+  }
+}
