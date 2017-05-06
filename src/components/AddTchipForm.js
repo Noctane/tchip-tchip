@@ -3,7 +3,7 @@ import React from 'react';
 class AddTchipForm extends React.Component {
 	createTchip(event) {
 		event.preventDefault();
-		const timestamp = Date.now();
+		const timestamp = (new Date(Date.now())).toLocaleString();
 		const tchip = {
 			tchip: this.tchip.value,
 			date: timestamp

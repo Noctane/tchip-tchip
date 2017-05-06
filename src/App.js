@@ -30,7 +30,7 @@ class App extends Component {
           {
             Object
               .keys(this.state.tchips)
-              .map(key => <Tchip key={key} index={key} details={this.state.tchips[key]}/>)
+              .reverse().map(key => <Tchip key={key} index={key} details={this.state.tchips[key]}/>)
           }
         </div>
       </div>
