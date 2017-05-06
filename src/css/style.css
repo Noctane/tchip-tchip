@@ -1,3 +1,7 @@
+.App {
+  width: 40em;
+  margin: 0 auto;
+}
 .tchip {
   width: 40em;
   margin: 1em 0;
@@ -63,6 +67,9 @@
 }
 .tchip-form {
   margin-top: 40px;
+}
+.tchip-form textarea {
+  width: 100%;
 }
 .tchip-form:after,
 .tchip-form:before {

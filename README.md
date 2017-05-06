@@ -17,6 +17,8 @@ Help & advice are welcome
 ## ToDo's
 - ~~Reverse the way tchips are displayed (most recent top, oldest bottom)~~
 - ~~Make timestamp render with a proper date format~~~
+- ~~Add likes incrementation~~~
+- Think about retchip! (...)
 - Add sample users 
 - Add React Router
 - Allow connection to the app with nickname

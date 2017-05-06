@@ -1,6 +1,19 @@
 import React from 'react';
 
 class Tchip extends React.Component {
+	constructor() {
+		super()
+		this.state = {
+			likes: 0
+		}
+	}
+	incrementLikes(event) {
+		event.preventDefault();
+		let likes = this.state.likes;
+		likes += 1;
+		this.setState({ likes });
+	}
+
 	render() {
 
 		const {details} = this.props;
@@ -22,9 +35,9 @@ class Tchip extends React.Component {
 						<p>{details.tchip}</p>
 					</div>
 					<div className="tchip-action">
-						<button className="like">
+						<button className="like" onClick={(e) => this.incrementLikes(e)}>
 							<div className="icon"><i className="fa fa-heart"></i></div>
-							<div className="like-count"> 0</div>
+							<div className="like-count"> {this.state.likes}</div>
 						</button>
 						<button className="retchip">
 							<div className="icon"><i className="fa fa-reply"></i></div>
