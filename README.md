@@ -15,7 +15,10 @@ npm start
 Help & advice are welcome
 
 ## ToDo's
-- Reverse the way tchips are displayed (most recent top, oldest bottom)
-- Make timestamp render with a proper date format
+- ~~Reverse the way tchips are displayed (most recent top, oldest bottom)~~
+- ~~Make timestamp render with a proper date format~~~
+- Add sample users 
+- Add React Router
+- Allow connection to the app with nickname
 - Add authentication
 	- Then display the name & the avatar to the tchip
